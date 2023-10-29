@@ -1,0 +1,69 @@
+.testimonial .slick-arrow.slick-prev,
+.testimonial .slick-arrow.slick-next{
+    
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 5px;
+}
+.slick-prev::before,
+.slick-next::before{
+    display: none;
+}
+
+.header::after{
+    content: '';
+    height: 4px;
+    width: 0;
+    background: darkslategray;
+    position:absolute;
+    left: 50%;
+    display: block;
+    
+    margin-top: 10px;
+    /* bottom:auto; */
+    /* transition: 0.5s; */
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+}
+.header:hover::after{
+    width:100%;
+    left:0;
+
+
+}
+.slick-arrow.slick-next{
+    right: -70px;
+}
+.slick-arrow.slick-prev{
+    left: -70px;
+}
+
+.testimonial .slick-dots li button::before{
+    font-size: 15px;
+    
+}
+
+.testimonial .slick-dots li{
+    top:10px;
+    
+}
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size:larger;
+  }
+  .on {
+    color: darkseagreen;
+  }
+  .off {
+    color: white;
+  }
+  .testimonial{
+    background: linear-gradient(110deg, #8b6f47 60%, #bbab9b 60%);
+    padding-bottom: 50px;
+  }

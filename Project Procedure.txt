@@ -1,0 +1,19 @@
+1. Install Anaconda to acquire multiple functionality in single application such as Python , Jupyter Notebook , numpy , pandas etc , additionally install tensorflow in the directory.
+2. Access "Model Building Code" through Jupyter Notebook under folder "Main_potato_project" in "training" sub folder.
+3. In case, you want to extend number of epochs in code, rerun each block of code in jupter notebook from the beginning.
+4. You can save different versions of model by executing last block of code which you can find under "saved_model" sub folder.
+5. Focusing on implementing "Backened Server" using python "FASTAPI server" .
+6. Before start with executing code , you just need to install some module named as "FASTAPI" , "Uvicorn" , "tensorflow" , "Matplotlib" , "tf-data-serving".
+7. Under "api" folder , there is a file named "fast.py" which you can execute by entering in virtual environment "venv" then switch to the folder and type command "uvicorn fast:app --reload"
+8. This command will successfully show you result such as "Application Startup Complete" in the console.
+9. You can verify - is your backened server works truly or not by using "Postman", simply put leaf image under file section send post request as - localhost:3000/predict/.
+10. The above treatment will classify the different classes of leaves on Backened Server.
+11. Coming to the frontend part - Let's switch to the virtual environment and move your directory from parent to the sub folder "Frontend" and type npm start, it will redirect you to chrome web page where you can see the beautiful frontend screen.
+12. Go to "Drag File section" select leaf image and find respective results as per disease with their measures.  
+
+
+
+
+Note :- In order to understand the basics of this source code , one should have better understanding about Pandas , Numpy , Machine Learning and Deep Learning Concept.
+        For Backened, good to have Fastapi expertise
+        For Frontend, ReactJS considered as a mandatory part. 
